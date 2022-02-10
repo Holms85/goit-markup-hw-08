@@ -1,0 +1,48 @@
+.activities {
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.activities__title {
+  @include font(700, 36px, 42px);
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.activities__photos {
+  margin-bottom: 30px;
+  position: relative;
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
+.activities__thumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activities__card-title {
+  @include font(700);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
