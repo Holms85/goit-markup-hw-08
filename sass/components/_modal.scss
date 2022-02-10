@@ -21,6 +21,8 @@
 
 .modal {
   position: relative;
+  top: 50%;
+  left: 50%;
   width: 90vw;
   min-height: 609px;
   background-color: var(--body-bg-color);
@@ -30,14 +32,15 @@
   transition: transform var(--time-hov-fok--) var(--cubic-bezier--),
     visibility var(--time-hov-fok--) var(--cubic-bezier--),
     opacity var(--time-hov-fok--) var(--cubic-bezier--);
+  transform: translate(-50%, -50%) scale(1);
 
   @media screen and (min-width: 480px) {
     position: absolute;
     width: 450px;
     height: 609px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%) scale(1);
   }
 
   @media screen and (min-width: 1200px) {
